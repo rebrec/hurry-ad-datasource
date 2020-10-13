@@ -1,0 +1,25 @@
+{
+  "name": "hurry-ad-datasource",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rebrec/hurry-ad-datasource.git"
+  },
+  "keywords": [
+    "hurry-admin-plugin"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rebrec/hurry-ad-datasource/issues"
+  },
+  "homepage": "https://github.com/rebrec/hurry-ad-datasource#readme",
+  "devDependencies": {
+    "np": "^6.5.0"
+  }
+}

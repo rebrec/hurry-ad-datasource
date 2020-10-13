@@ -127,7 +127,7 @@ module.exports = {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return PluginInstaller; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return PluginAdDatasource; });
 /* harmony import */ var _src_core_Plugin__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../src/core/Plugin */ "./src/core/Plugin.js");
 /* harmony import */ var _datasource_definition__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./datasource.definition */ "./plugins-src/hurry-ad-datasource/datasource.definition.js");
 /* harmony import */ var _datasource_definition__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_datasource_definition__WEBPACK_IMPORTED_MODULE_1__);
@@ -154,23 +154,23 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 
 
 
-var PluginInstaller =
+var PluginAdDatasource =
 /*#__PURE__*/
 function (_Plugin) {
-  _inherits(PluginInstaller, _Plugin);
+  _inherits(PluginAdDatasource, _Plugin);
 
-  function PluginInstaller(api, context) {
+  function PluginAdDatasource(api, context) {
     var _this;
 
-    _classCallCheck(this, PluginInstaller);
+    _classCallCheck(this, PluginAdDatasource);
 
-    _this = _possibleConstructorReturn(this, _getPrototypeOf(PluginInstaller).call(this, api, context));
+    _this = _possibleConstructorReturn(this, _getPrototypeOf(PluginAdDatasource).call(this, api, context));
     api.store.datasourceManager.addDatasourceDefinition(_datasource_definition__WEBPACK_IMPORTED_MODULE_1___default.a, context.pluginDir);
-    api.store.registerContextMenu(_menu__WEBPACK_IMPORTED_MODULE_2__["default"]);
+    api.store.contextMenu.registerPlugin(_menu__WEBPACK_IMPORTED_MODULE_2__["default"], "ad-datasource");
     return _this;
   }
 
-  _createClass(PluginInstaller, [{
+  _createClass(PluginAdDatasource, [{
     key: "getPluginsAvailable",
     value: function getPluginsAvailable() {}
   }, {
@@ -181,7 +181,7 @@ function (_Plugin) {
     value: function installPlugin(tgzPath) {}
   }]);
 
-  return PluginInstaller;
+  return PluginAdDatasource;
 }(_src_core_Plugin__WEBPACK_IMPORTED_MODULE_0__["default"]);
 
 
